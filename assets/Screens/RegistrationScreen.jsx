@@ -17,12 +17,6 @@ const RegistrationScreen = () => {
   const [focusedInput, setFocusedInput] = useState(null);
   const [keyboardVisible, setKeyboardVisible] = useState(false);
 
-  const [fontsLoaded] = useFonts({
-    "Roboto-Regular": require("../fonts/Roboto-Regular.ttf"),
-    "Roboto-Bold": require("../fonts/Roboto-Bold.ttf"),
-    "Roboto-Medium": require("../fonts/Roboto-Medium.ttf"),
-  });
-
   useEffect(() => {
     const keyboardDidShowListener = Keyboard.addListener(
       "keyboardDidShow",
